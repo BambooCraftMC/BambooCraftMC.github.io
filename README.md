@@ -218,7 +218,7 @@
   <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-center md:justify-between items-center space-y-3 md:space-y-0">
     <p class="text-center md:text-left">&copy; 2025 BamboocraftMC. All rights reserved.</p>
     <div class="flex space-x-6">
-      <a href="https://web.bamboocraftmc.net/policy.html" target="_blank" class="hover:text-lime-400 transition duration-300">Privacy Policy</a>
+      <a href="https://web.bamboocraftmc.net/policy.html" class="hover:text-lime-400 transition duration-300">Privacy Policy</a>
       <a href="https://web.bamboocraftmc.net/rules.html" class="hover:text-lime-400 transition duration-300">Rules</a>
       <a href="https://web.bamboocraftmc.net/tos.html" class="hover:text-lime-400 transition duration-300">Terms of Service</a>
     </div>
