@@ -67,7 +67,7 @@
                     Dual Adventure Awaits. <span class="text-lime-400">Join BamboocraftMC.</span>
                 </h1>
                 <p class="text-xl md:text-2xl text-gray-200 mb-10">
-                    A welcoming, community-focused Java server offering two distinct modes: **Lifesteal PvP** and **Enhanced Survival**. **Zero Economy, Zero Pay-to-Win.**
+                    A welcoming, community-focused Java server offering two distinct modes: Lifesteal PvP and Enhanced Survival. Zero Economy, Zero Pay-to-Win.
                 </p>
 
                 <!-- Server IP Display & Copy Button -->
@@ -100,7 +100,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
                     </div>
                     <h3 class="text-2xl font-semibold mb-3 text-bamboo-light">Survival (QoL Focused)</h3>
-                    <p class="text-gray-400">This is our Quality-of-Life Survival mode. Enjoy the classic game enhanced with essential features like **`/sethome`**, custom teleportation, and land claims to protect your massive builds from griefers. Play cooperatively and build safe.</p>
+                    <p class="text-gray-400">This is our Quality-of-Life Survival mode. Enjoy the classic game enhanced with essential features like `/sethome`, custom teleportation, and land claims to protect your massive builds from griefers. Play cooperatively and build safe.</p>
                 </div>
 
                 <!-- Feature 2: Lifesteal (Vanilla Focused) -->
@@ -112,7 +112,7 @@
                         </svg>
                     </div>
                     <h3 class="text-2xl font-semibold mb-3 text-bamboo-light">Lifesteal (Vanilla PvP)</h3>
-                    <p class="text-gray-400">A pure, high-stakes combat experience. This mode is **MUCH more vanilla** with minimal plugins. Health is your currency; kill players to steal hearts and survive. A true test of skill and ruthlessness.</p>
+                    <p class="text-gray-400">A pure, high-stakes combat experience. This mode is MUCH more vanilla with minimal plugins. Health is your currency; kill players to steal hearts and survive. A true test of skill and ruthlessness.</p>
                 </div>
 
                 <!-- Feature 3: Dedicated Community -->
