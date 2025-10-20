@@ -50,9 +50,6 @@
     <header class="bg-gray-900 shadow-xl sticky top-0 z-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <a href="#" class="flex items-center space-x-2 text-2xl font-extrabold text-lime-400">
-                <!-- Simple Bamboo Icon SVG -->
-                    <path d="M10 20c0 1.1-.9 2-2 2s-2-.9-2-2v-3c0-1.1.9-2 2-2s2 .9 2 2v3zm4-12c0-1.1-.9-2-2-2s-2 .9-2 2v1c0 1.1.9 2 2 2s2-.9 2-2V8zm-2 10V9h-2v9c0 1.1-.9 2-2 2s-2-.9-2-2v-9h-2v9c0 2.2 1.8 4 4 4s4-1.8 4-4zM16 4v1c0 1.1.9 2 2 2s2-.9 2-2V4c0-1.1-.9-2-2-2s-2 .9-2 2z"/>
-                </svg>
                 <span>BamboocraftMC</span>
             </a>
             <nav class="hidden md:flex space-x-6">
