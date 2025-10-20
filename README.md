@@ -24,7 +24,6 @@
         }
     </script>
     <style>
-        /* Custom scrollbar for aesthetics */
         body {
             font-family: 'Inter', sans-serif;
             background-color: #0d0e0d; /* Dark background */
@@ -144,38 +143,11 @@
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 py-8 mt-12 border-t border-bamboo-green">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-500 text-sm">
-            <p>&copy; 2024 BamboocraftMC. All Rights Reserved. Not affiliated with Mojang Studios.</p>
-            <div class="mt-2 space-x-4">
-                <a href="#" class="hover:text-lime-400 transition">Rules</a>
-                <a href="#" class="hover:text-lime-400 transition">Discord</a>
-                <a href="#" class="hover:text-lime-400 transition">Vote (Coming Soon)</a>
-            </div>
-        </div>
-    </footer>
-
     <!-- JavaScript for Copy IP functionality -->
     <script>
         const copyButton = document.getElementById('copy-button');
         const serverIp = document.getElementById('server-ip').textContent;
         const copyMessage = document.getElementById('copy-message');
-
-        /**
-         * Converts the base64 string to an ArrayBuffer.
-         * This function is required for the audio playback code, but not used here.
-         * It is included to satisfy the Linter.
-         */
-        function base64ToArrayBuffer(base64) {
-            const binaryString = atob(base64);
-            const len = binaryString.length;
-            const bytes = new Uint8Array(len);
-            for (let i = 0; i < len; i++) {
-                bytes[i] = binaryString.charCodeAt(i);
-            }
-            return bytes.buffer;
-        }
 
         /**
          * Writes the given text to the clipboard and shows a confirmation message.
