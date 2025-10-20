@@ -28,7 +28,7 @@
             background-color: #0d0e0d; /* Dark background */
         }
         .hero-background {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://placehold.co/1920x600/1E5631/F9ECCA?text=BAMBOO+FOREST');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://bamboocraftmc.github.io/BambooCraft%20Main.png');
             background-size: cover;
             background-position: center;
         }
