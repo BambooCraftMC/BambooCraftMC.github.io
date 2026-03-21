@@ -29,10 +29,10 @@
             font-family: 'Inter', sans-serif;
             background-color: #0d0e0d;
         }
-    </style>
+    </syle>
 </head>
 
-<body class="text-bamboo-light min-h-screen flex flex-col">
+<body class="ext-bamboo-light min-h-screen flex flex-col">
 
 <!-- Header -->
 <header class="bg-gray-900 shadow-xl sticky top-0 z-10">
@@ -78,7 +78,7 @@ function convert() {
   date.setFullYear(2026);
 
   const unix = Math.floor(date.getTime() / 1000);
-  const discord = `<t:${unix}:T>`;
+  const discord = `<t:${unix}:f>`;
 
   lastDiscord = discord;
   document.getElementById('discord').innerText = discord;
