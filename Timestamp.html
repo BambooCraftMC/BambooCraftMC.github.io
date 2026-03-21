@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="icon.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unix Time Converter</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'bamboo-green': '#1E5631',
+                        'bamboo-light': '#F9ECCA',
+                        'bamboo-brown': '#A27035',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d0e0d;
+        }
+    </style>
+</head>
+
+<body class="text-bamboo-light min-h-screen flex flex-col">
+
+<!-- Header -->
+<header class="bg-gray-900 shadow-xl sticky top-0 z-10">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+    <span class="text-2xl font-extrabold text-lime-400">Unix Converter</span>
+  </div>
+</header>
+
+<main class="flex-grow flex items-center justify-center px-4">
+
+  <div class="bg-gray-900 p-8 rounded-xl shadow-2xl w-full max-w-md border border-gray-800">
+
+    <h1 class="text-2xl font-bold mb-6 text-center">Discord Timestamp Tool</h1>
+
+    <label class="text-gray-400 text-sm">Local Date & Time</label>
+    <input type="datetime-local" id="localTime"
+      class="w-full mt-2 p-3 rounded-lg bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-lime-400">
+
+    <button onclick="convert()"
+      class="w-full mt-4 py-3 bg-lime-500 text-gray-900 font-bold rounded-lg hover:bg-lime-400 transition">
+      Convert
+    </button>
+
+    <div class="mt-6 flex items-center justify-between bg-black p-3 rounded-lg border border-gray-800">
+      <span id="discord" class="font-mono text-lime-400 break-all">—</span>
+      <button onclick="copyDiscord()" class="text-gray-400 hover:text-white text-lg">📋</button>
+    </div>
+
+    <p id="copyMsg" class="text-center text-sm text-lime-400 mt-3 opacity-0">Copied!</p>
+
+  </div>
+
+</main>
+
+<script>
+let lastDiscord = "";
+
+function convert() {
+  const input = document.getElementById('localTime').value;
+  if (!input) return;
+
+  const date = new Date(input);
+  date.setFullYear(2026);
+
+  const unix = Math.floor(date.getTime() / 1000);
+  const discord = `<t:${unix}:T>`;
+
+  lastDiscord = discord;
+  document.getElementById('discord').innerText = discord;
+}
+
+function copyDiscord() {
+  if (!lastDiscord) return;
+
+  navigator.clipboard.writeText(lastDiscord).then(() => {
+    const msg = document.getElementById('copyMsg');
+    msg.classList.remove('opacity-0');
+    setTimeout(() => msg.classList.add('opacity-0'), 1500);
+  });
+}
+
+window.onload = () => {
+  const now = new Date();
+  now.setMinutes(now.getMinutes() - now.getTimezoneOffset());
+  document.getElementById('localTime').value = now.toISOString().slice(0,16);
+};
+</script>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-gray-400 text-sm py-6 mt-12 border-t border-gray-800">
+  <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-center md:justify-between items-center space-y-3 md:space-y-0">
+    <p>BamboocraftMC.</p>
+    <div class="flex space-x-6">
+      <a href="https://web.bamboocraftmc.net/discord" class="hover:text-lime-400" target="_blank">Discord</a>
+      <a href="mailto:sbamboomcnetwork@gmail.com" class="hover:text-lime-400">Email</a>
+      <a href="https://web.bamboocraftmc.net/policy.html" class="hover:text-lime-400">Privacy Policy</a>
+      <a href="https://web.bamboocraftmc.net/rules.html" class="hover:text-lime-400">Rules</a>
+      <a href="https://web.bamboocraftmc.net/tos.html" class="hover:text-lime-400">Terms</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
