@@ -61,33 +61,46 @@
     <iframe src="https://discord.com/widget?id=1473111575479976078&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
     <main>
         <!-- Hero Section -->
-        <section class="hero-background text-center py-20 md:py-32 rounded-b-2xl mb-12">
-            <div class="max-w-4xl mx-auto px-4">
-                <h1 class="text-5xl md:text-7xl font-extrabold mb-4 leading-tight text-white drop-shadow-lg">
-                    Explore and Build. <span class="text-lime-400">Join BamboocraftMC.</span>
-                </h1>
-                <p class="text-xl md:text-2xl text-gray-200 mb-10">
-                    A welcoming, community-focused Java server offering two distinct experiences: Quality-of-Life Survival and the upcoming Minecraft Earth. Free to play, no pay-to-win, just pure creativity.
-                </p>
+        <section class="hero-background py-20 md:py-32 rounded-b-2xl mb-12">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-8">
+        
+        <!-- LEFT: Text Content -->
+        <div class="flex-1 text-center md:text-left">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-4 leading-tight text-white drop-shadow-lg">
+                Explore and Build. <span class="text-lime-400">Join BamboocraftMC.</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-200 mb-10">
+                A welcoming, community-focused Java server offering two distinct experiences: Quality-of-Life Survival and the upcoming Minecraft Earth.
+            </p>
 
-                <!-- Server IP Display & Copy Button -->
-                <div class="inline-block p-2 bg-bamboo-light rounded-xl shadow-2xl transform hover:scale-[1.02] transition duration-500">
-                    <div class="flex items-center bg-gray-900 rounded-lg p-3 md:p-4 border-2 border-lime-400/50">
-                        <span id="server-ip" class="text-xl md:text-3xl font-mono font-bold text-lime-400 select-all mr-4">
-                            play.bamboocraftmc.net
-                        </span>
-                        <button id="copy-button" class="bg-lime-500 text-gray-900 px-4 py-2 rounded-lg font-bold hover:bg-lime-400 transition duration-300 flex items-center shadow-lg">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-1" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M16 1h-4.14c-.65 0-1.28.25-1.76.73L4.73 7.24C4.25 7.72 4 8.35 4 9v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2zm0 18H6V9h10v10zm-6-9H8v-2h2v2zm3 0h-2v-2h2v2z"/>
-                            </svg>
-                            Copy IP
-                        </button>
-                    </div>
+            <!-- Server IP Box -->
+            <div class="inline-block p-2 bg-bamboo-light rounded-xl shadow-2xl">
+                <div class="flex items-center bg-gray-900 rounded-lg p-3 md:p-4 border-2 border-lime-400/50">
+                    <span id="server-ip" class="text-xl md:text-3xl font-mono font-bold text-lime-400 select-all mr-4">
+                        play.bamboocraftmc.net
+                    </span>
+                    <button id="copy-button" class="bg-lime-500 text-gray-900 px-4 py-2 rounded-lg font-bold hover:bg-lime-400 transition duration-300">
+                        Copy IP
+                    </button>
                 </div>
-
-                <p id="copy-message" class="mt-4 text-sm text-lime-400 opacity-0 transition-opacity duration-300 h-5"></p>
             </div>
-        </section>
+
+            <p id="copy-message" class="mt-4 text-sm text-lime-400 opacity-0 transition-opacity duration-300 h-5"></p>
+        </div>
+
+        <!-- RIGHT: Discord (FULL HEIGHT) -->
+        <div class="w-[350px] h-full flex-shrink-0">
+            <iframe 
+                src="https://discord.com/widget?id=1473111575479976078&theme=dark"
+                class="w-full h-full min-h-[500px] md:min-h-[600px] rounded-xl shadow-xl"
+                allowtransparency="true"
+                frameborder="0"
+                sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+            </iframe>
+        </div>
+
+    </div>
+</section>
 
         <!-- Features/Gamemodes Section -->
         <section id="features" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
