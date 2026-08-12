@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Outlands Network - Rules">
+    <meta property="og:description" content="Rules for the Outlands Network.">
+    <meta property="og:url" content="https://www.outlandsmc.net/rules.html">
+    <meta property="og:image" content="https://www.outlandsmc.net/icon.png">
     <link rel="icon" href="icon.png" type="image/png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BambooCraftMC | Rules</title>
+    <title>Outlands Network - Rules</title>
 
-    <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
-
     <script>
         tailwind.config = {
             theme: {
@@ -17,9 +20,11 @@
                         sans: ['Inter', 'sans-serif'],
                     },
                     colors: {
-                        'bamboo-green': '#1E5631',
-                        'bamboo-light': '#F9ECCA',
-                        'bamboo-brown': '#A27035',
+                        'badlands-red': '#8B3A2B',
+                        'badlands-orange': '#C46A3A',
+                        'badlands-sand': '#E6C49A',
+                        'badlands-brown': '#6E2C00',
+                        'badlands-clay': '#A0522D'
                     }
                 }
             }
@@ -31,109 +36,251 @@
             font-family: 'Inter', sans-serif;
             background-color: #0d0e0d;
         }
+
+        .hero-background {
+            background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+                url('https://web.outlandsmc.net/BambooBackground.png');
+            background-size: cover;
+            background-position: center;
+            min-height: 30vh;
+            overflow: hidden;
+        }
+
+        .badlands-gradient {
+            background: linear-gradient(135deg, #8B3A2B 0%, #C46A3A 100%);
+        }
+
+        .badlands-shadow {
+            box-shadow: 0 10px 15px -3px rgba(196, 106, 58, 0.5),
+                        0 4px 6px -2px rgba(196, 106, 58, 0.2);
+        }
+
+        details {
+            transition: all 0.2s ease;
+        }
+
+        details summary {
+            cursor: pointer;
+            list-style: none;
+        }
+
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+
+        details summary::after {
+            content: '+';
+            float: right;
+            font-size: 1.5rem;
+            line-height: 1;
+            color: #C46A3A;
+        }
+
+        details[open] summary::after {
+            content: '−';
+        }
     </style>
 </head>
 
-<body class="text-bamboo-light min-h-screen flex flex-col">
+<body class="text-white">
 
-<!-- Header -->
-<header class="bg-gray-900 shadow-xl sticky top-0 z-10">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-        <a href="index.html" class="flex items-center space-x-2 text-2xl font-extrabold text-lime-400">
-            <span>BamboocraftMC</span>
-            <p style="margin-top: 4px;">
-                <small style="font-size: 10px; color: grey;">
-                    NOT AFFILIATED WITH Mojang ab, Microsoft, or Minecraft
-                </small>
-            </p>
-        </a>
+    <!-- HEADER -->
+    <header class="w-full bg-gray-950 border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center">
+            <span class="text-xs md:text-sm text-gray-400">
+                NOT AFFILIATED WITH MOJANG OR MINECRAFT
+            </span>
 
-        <nav class="hidden md:flex space-x-6">
-            <a href="index.html" class="text-gray-300 hover:text-lime-400 transition duration-300">Home</a>
-            <a href="rules.html" class="text-gray-300 hover:text-lime-400 transition duration-300">Rules</a>
-            <a href="policy.html" class="text-gray-300 hover:text-lime-400 transition duration-300">Privacy</a>
-            <a href="tos.html" class="text-gray-300 hover:text-lime-400 transition duration-300">TOS</a>
-        </nav>
-    </div>
-</header>
+            <div class="flex-1 text-center">
+                <h1 class="text-xl font-bold text-badlands-orange">Outlands Network</h1>
+            </div>
 
-<!-- Main Content -->
-<main class="flex-grow max-w-4xl mx-auto px-4 py-12">
-
-    <div class="bg-gray-800 p-8 rounded-xl shadow-2xl">
-
-        <h1 class="text-4xl font-bold text-center mb-8 text-lime-400">
-            BambooCraftMC Server Rules
-        </h1>
-
-        <h2 class="text-2xl font-semibold mt-6 text-bamboo-light">1. Be Respectful</h2>
-        <p class="text-gray-300 mt-2">Be respectful to other players. Minor disrespect or heated arguments may occur, but excessive harassment is not tolerated.</p>
-        <ul class="list-disc pl-6 mt-2 text-gray-400">
-            <li><strong>Action:</strong> Mute on Discord and in-game (no warning issued).</li>
-        </ul>
-
-        <h2 class="text-2xl font-semibold mt-6 text-bamboo-light">2. No Inappropriate Language</h2>
-        <p class="text-gray-300 mt-2">The use of excessive profanity is not allowed, Don't swear too much</p>
-        <ul class="list-disc pl-6 mt-2 text-gray-400">
-            <li><strong>Action:</strong> Warning.</li>
-        </ul>
-
-        <h2 class="text-2xl font-semibold mt-6 text-bamboo-light">3. No Spamming</h2>
-        <p class="text-gray-300 mt-2">Do not send repeated or disruptive messages in chat.</p>
-        <ul class="list-disc pl-6 mt-2 text-gray-400">
-            <li><strong>Action:</strong> Mute.</li>
-        </ul>
-
-        <h2 class="text-2xl font-semibold mt-6 text-bamboo-light">4. No NSFW Material</h2>
-        <p class="text-gray-300 mt-2">This server is not meant for pornographic, adult, or otherwise NSFW content.</p>
-        <ul class="list-disc pl-6 mt-2 text-gray-400">
-            <li><strong>Action:</strong> 1-day in-game ban and mute on Discord.</li>
-        </ul>
-
-        <h2 class="text-2xl font-semibold mt-6 text-bamboo-light">5. No Advertisements</h2>
-        <p class="text-gray-300 mt-2">Advertising other servers, communities, or streams is not allowed.</p>
-        <ul class="list-disc pl-6 mt-2 text-gray-400">
-            <li><strong>Action:</strong> Warning.</li>
-        </ul>
-
-        <h2 class="text-2xl font-semibold mt-6 text-bamboo-light">6. Direct & Indirect Threats</h2>
-        <p class="text-gray-300 mt-2">Threats such as DDoS, death threats, doxxing, or other malicious acts are strictly prohibited.</p>
-        <ul class="list-disc pl-6 mt-2 text-gray-400">
-            <li><strong>Action:</strong> Warning.</li>
-        </ul>
-
-        <h2 class="text-2xl font-semibold mt-6 text-bamboo-light">Disciplinary System</h2>
-        <p class="text-gray-300 mt-2">The following system applies to warnings and bans:</p>
-        <ul class="list-disc pl-6 mt-2 text-gray-400">
-            <li>Users may receive up to <strong>3 warnings</strong>.</li>
-            <li>After <strong>3 warnings</strong>, the user will be <strong>banned</strong>.</li>
-            <li>Bans are <strong>temporary</strong> and last a set number of days.</li>
-            <li>When banned, the user receives a <strong>permanent warning</strong> on record.</li>
-            <li><strong>No permanent bans</strong> will be issued unless the user has reached 3 warnings.</li>
-            <li>ALL PAST BANS BEFORE THESE RULES STAND</li>
-        </ul>
-
-        <h2 class="text-2xl font-semibold mt-6 text-bamboo-light">Enforcement</h2>
-        <p class="text-gray-300 mt-2">Admins, Owners, and Mods enforce these rules. Punishments may vary slightly depending on severity or repetition.</p>
-
-        <h2 class="text-2xl font-semibold mt-6 text-bamboo-light">Agreement</h2>
-        <p class="text-gray-300 mt-2">By participating in this server, you agree to these rules and any future updates.</p>
-
-    </div>
-
-</main>
-
-<!-- Footer -->
-<footer class="bg-gray-900 text-gray-400 text-sm py-6 mt-12 border-t border-gray-800">
-    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-center md:justify-between items-center space-y-3 md:space-y-0">
-        <p class="text-center md:text-left">BamboocraftMC.</p>
-        <div class="flex space-x-6">
-            <a href="policy.html" class="hover:text-lime-400 transition duration-300">Privacy Policy</a>
-            <a href="rules.html" class="hover:text-lime-400 transition duration-300">Rules</a>
-            <a href="tos.html" class="hover:text-lime-400 transition duration-300">Terms of Service</a>
+            <nav class="space-x-6 text-gray-300">
+                <a href="#" class="hover:text-badlands-orange transition">Home</a>
+                <a href="https://web.outlandsmc.net/rules.html" class="text-badlands-orange">Rules</a>
+                <a href="https://web.outlandsmc.net/policy.html" class="hover:text-badlands-orange transition">Policy</a>
+                <a href="https://web.outlandsmc.net/tos.html" class="hover:text-badlands-orange transition">TOS</a>
+            </nav>
         </div>
-    </div>
-</footer>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero-background flex items-center justify-center text-center px-4">
+        <div>
+            <h1 class="text-5xl md:text-7xl font-bold text-badlands-orange">Server Rules</h1>
+            <p class="mt-4 text-lg md:text-xl text-gray-300">
+                Keep the Outlands enjoyable for everyone.
+            </p>
+        </div>
+    </section>
+
+    <!-- RULES -->
+    <main class="max-w-5xl mx-auto px-4 py-16">
+
+        <section>
+            <h2 class="text-3xl font-bold text-badlands-sand mb-8">General Rules</h2>
+
+            <div class="space-y-5">
+
+                <div class="bg-gray-900 p-6 rounded-2xl border border-gray-800 badlands-shadow">
+                    <h3 class="text-xl font-semibold text-badlands-orange">1. Be Respectful</h3>
+                    <p class="text-gray-400 mt-2">
+                        Be respectful to other players. Minor disrespect or heated arguments may occur,
+                        but excessive harassment is not tolerated.
+                    </p>
+                </div>
+
+                <div class="bg-gray-900 p-6 rounded-2xl border border-gray-800 badlands-shadow">
+                    <h3 class="text-xl font-semibold text-badlands-orange">2. No Spamming</h3>
+                    <p class="text-gray-400 mt-2">
+                        Any use of spam can result in a warning or mute.
+                    </p>
+                </div>
+
+                <div class="bg-gray-900 p-6 rounded-2xl border border-gray-800 badlands-shadow">
+                    <h3 class="text-xl font-semibold text-badlands-orange">3. No Advertising or Promoting</h3>
+                    <p class="text-gray-400 mt-2">
+                        Any promoting will lead to a warning and/or a mute.
+                    </p>
+                </div>
+
+                <div class="bg-gray-900 p-6 rounded-2xl border border-gray-800 badlands-shadow">
+                    <h3 class="text-xl font-semibold text-badlands-orange">4. No NSFW</h3>
+                    <p class="text-gray-400 mt-2">
+                        The only NSFW discussion allowed is in the Discord channel designated for it,
+                        and adult or NSFW content is not allowed.
+                    </p>
+                </div>
+
+                <div class="bg-gray-900 p-6 rounded-2xl border border-gray-800 badlands-shadow">
+                    <h3 class="text-xl font-semibold text-badlands-orange">5. Direct &amp; Indirect Threats</h3>
+                    <p class="text-gray-400 mt-2">
+                        Threats such as DDoS, death threats, doxxing, or other malicious acts are strictly prohibited.
+                    </p>
+                </div>
+
+                <div class="bg-gray-900 p-6 rounded-2xl border border-gray-800 badlands-shadow">
+                    <h3 class="text-xl font-semibold text-badlands-orange">6. No Toxicity in Any Chats</h3>
+                    <p class="text-gray-400 mt-2">
+                        Being toxic is not tolerated. Even minor toxic behavior may result in an immediate mute
+                        and/or ban.
+                    </p>
+                </div>
+
+                <div class="bg-gray-900 p-6 rounded-2xl border border-gray-800 badlands-shadow">
+                    <h3 class="text-xl font-semibold text-badlands-orange">7. No Intentionally Crashing the Server</h3>
+                    <p class="text-gray-400 mt-2">
+                        Intentionally crashing the server is not allowed.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ENFORCEMENT -->
+        <section class="mt-16">
+            <div class="bg-gray-900 p-8 rounded-2xl border border-gray-800 badlands-shadow">
+                <h2 class="text-3xl font-bold text-badlands-sand">Enforcement</h2>
+                <p class="text-gray-400 mt-4 leading-relaxed">
+                    Admins, Owners, and Mods enforce these rules. Punishments may vary slightly depending
+                    on severity or repetition.
+                </p>
+            </div>
+        </section>
+
+        <!-- AGREEMENT -->
+        <section class="mt-8">
+            <div class="bg-gray-900 p-8 rounded-2xl border border-gray-800 badlands-shadow">
+                <h2 class="text-3xl font-bold text-badlands-sand">Agreement</h2>
+                <p class="text-gray-400 mt-4 leading-relaxed">
+                    By participating in this server, you agree to these rules and any future updates.
+                </p>
+            </div>
+        </section>
+
+        <!-- WORLD-SPECIFIC RULES -->
+        <section class="mt-16">
+            <h2 class="text-3xl font-bold text-badlands-sand mb-8">World-Specific Rules</h2>
+
+            <div class="space-y-5">
+
+                <!-- EARTH -->
+                <details class="bg-gray-900 rounded-2xl border border-gray-800 badlands-shadow">
+                    <summary class="p-6 text-2xl font-bold text-badlands-orange">
+                        Earth
+                    </summary>
+
+                    <div class="px-6 pb-6">
+                        <ol class="list-decimal list-inside space-y-4 text-gray-400">
+                            <li>No killing directly on respawn.</li>
+                            <li>No Greifing in claims!</li>
+                            <li>If the player asks you to stop killing them, stop. This is not anarchy.</li>
+                            <li>Rules you made up during your fight are not enforceable by mods
+                                (can't believe I have to put this here).</li>
+                            <li>
+                                No unfair advantage installed on your game client. Generally allowed things
+                                are Fullbright, Freecam (FREE PLAY, NO CLIPPING TO SEE CAVES!!), and things
+                                like Voxy or Bobby.
+                            </li>
+                        </ol>
+                    </div>
+                </details>
+
+                <!-- ANARCHY -->
+                <details class="bg-gray-900 rounded-2xl border border-gray-800 badlands-shadow">
+                    <summary class="p-6 text-2xl font-bold text-badlands-orange">
+                        Anarchy
+                    </summary>
+
+                    <div class="px-6 pb-6">
+                        <ol class="list-decimal list-inside space-y-4 text-gray-400">
+                            <li>Hacking is allowed with clients like Meteor Client or other clients.</li>
+                            <li>
+                                Chat is still moderated, and any step out of line will still result in
+                                moderation action.
+                            </li>
+                        </ol>
+                    </div>
+                </details>
+
+                <!-- SURVIVAL -->
+                <details class="bg-gray-900 rounded-2xl border border-gray-800 badlands-shadow">
+                    <summary class="p-6 text-2xl font-bold text-badlands-orange">
+                        Survival
+                    </summary>
+
+                    <div class="px-6 pb-6">
+                        <p class="text-gray-400 leading-relaxed">
+                            Survival currently has the same rules as Earth as it is being removed soon.
+                        </p>
+                    </div>
+                </details>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-400 text-sm py-6 mt-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-center md:justify-between items-center space-y-3 md:space-y-0">
+            <p class="text-center md:text-left">OutlandsMC.</p>
+
+            <div class="flex flex-wrap justify-center gap-x-6 gap-y-2">
+                <a href="https://web.outlandsmc.net/discord"
+                   class="hover:text-badlands-orange transition"
+                   target="_blank" rel="noopener noreferrer">Discord</a>
+                <a href="mailto:sbamboomcnetwork@gmail.com"
+                   class="hover:text-badlands-orange transition">Email</a>
+                <a href="https://web.outlandsmc.net/policy.html"
+                   class="hover:text-badlands-orange transition">Privacy Policy</a>
+                <a href="https://web.outlandsmc.net/rules.html"
+                   class="hover:text-badlands-orange transition">Rules</a>
+                <a href="https://web.outlandsmc.net/tos.html"
+                   class="hover:text-badlands-orange transition">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
