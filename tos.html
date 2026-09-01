@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Outlands Network - Terms of Service">
+    <meta property="og:description" content="Terms of Service for the Outlands Network.">
+    <meta property="og:url" content="https://www.outlandsmc.net/tos.html">
+    <meta property="og:image" content="https://www.outlandsmc.net/icon.png">
+
     <link rel="icon" href="icon.png" type="image/png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BambooCraftMC - Terms of Service</title>
 
-    <!-- Tailwind -->
+    <title>Outlands Network - Terms of Service</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -16,9 +22,11 @@
                         sans: ['Inter', 'sans-serif'],
                     },
                     colors: {
-                        'bamboo-green': '#1E5631',
-                        'bamboo-light': '#F9ECCA',
-                        'bamboo-brown': '#A27035',
+                        'badlands-red': '#8B3A2B',
+                        'badlands-orange': '#C46A3A',
+                        'badlands-sand': '#E6C49A',
+                        'badlands-brown': '#6E2C00',
+                        'badlands-clay': '#A0522D'
                     }
                 }
             }
@@ -30,102 +38,279 @@
             font-family: 'Inter', sans-serif;
             background-color: #0d0e0d;
         }
+
+        .hero-background {
+            background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+                url('https://web.outlandsmc.net/BambooBackground.png');
+            background-size: cover;
+            background-position: center;
+            min-height: 30vh;
+            overflow: hidden;
+        }
+
+        .badlands-gradient {
+            background: linear-gradient(135deg, #8B3A2B 0%, #C46A3A 100%);
+        }
+
+        .badlands-shadow {
+            box-shadow: 0 10px 15px -3px rgba(196, 106, 58, 0.5),
+                        0 4px 6px -2px rgba(196, 106, 58, 0.2);
+        }
     </style>
 </head>
 
-<body class="text-bamboo-light min-h-screen flex flex-col">
+<body class="text-white min-h-screen flex flex-col">
 
-<!-- Header -->
-<header class="bg-gray-900 shadow-xl sticky top-0 z-10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-        <a href="index.html" class="flex items-center space-x-2 text-2xl font-extrabold text-lime-400">
-            <span>BamboocraftMC</span>
-            <p style="margin-top: 4px;">
-                <small style="font-size: 10px; color: grey;">
-                    NOT AFFILIATED WITH Mojang ab, Microsoft, or Minecraft
-                </small>
-            </p>
-        </a>
-        <nav class="hidden md:flex space-x-6">
-            <a href="index.html#features" class="text-gray-300 hover:text-lime-400 transition duration-300">Gamemodes</a>
-            <a href="index.html#join" class="px-4 py-2 bg-bamboo-green text-bamboo-light rounded-lg hover:bg-lime-600 transition duration-300 font-semibold shadow-md">Play Now</a>
-        </nav>
-    </div>
-</header>
+    <!-- HEADER -->
+    <header class="w-full bg-gray-950 border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center">
 
-<!-- Main Content -->
-<main class="flex-grow">
-    <section class="max-w-4xl mx-auto px-4 py-16">
-        
-        <h1 class="text-4xl md:text-5xl font-extrabold mb-6 text-lime-400">Terms of Service</h1>
+            <span class="text-xs md:text-sm text-gray-400">
+                NOT AFFILIATED WITH MOJANG OR MINECRAFT
+            </span>
 
-        <p class="text-gray-300 mb-6">
-            Welcome to <strong>BambooCraftMC</strong>! By accessing or playing on our Minecraft server 
-            (<a href="https://mc.bamboocraftmc.net" class="text-lime-400 hover:underline">mc.bamboocraftmc.net</a>), 
-            you agree to follow these Terms of Service. Please read them carefully before continuing.
-        </p>
+            <div class="flex-1 text-center">
+                <h1 class="text-xl font-bold text-badlands-orange">
+                    Outlands Network
+                </h1>
+            </div>
 
-        <h2 class="text-2xl font-bold mt-8 mb-2 text-lime-400">1. Eligibility</h2>
-        <p class="text-gray-300">
-            You must be at least <strong>13 years old</strong> to play on BambooCraftMC. If you are under 13, you may only participate with verified parental or guardian consent. By playing, you confirm that you meet these requirements.
-        </p>
+            <nav class="space-x-6 text-gray-300">
+                <a href="https://www.outlandsmc.net/"
+                   class="hover:text-badlands-orange transition">
+                    Home
+                </a>
 
-        <h2 class="text-2xl font-bold mt-8 mb-2 text-lime-400">2. Mojang Account Requirement</h2>
-        <p class="text-gray-300">
-            You must use a <strong>legitimately purchased Minecraft: Java Edition account</strong> from Mojang/Microsoft. Pirated or “cracked” clients are not permitted. You are solely responsible for the security of your account.
-        </p>
+                <a href="https://www.outlandsmc.net/rules.html"
+                   class="hover:text-badlands-orange transition">
+                    Rules
+                </a>
 
-        <h2 class="text-2xl font-bold mt-8 mb-2 text-lime-400">3. Server Conduct</h2>
-        <p class="text-gray-300">
-            All players must follow the <a href="rules.html" class="text-lime-400 hover:underline">Server Rules</a>. Staff members and moderators reserve the right to <strong>kick, mute, or ban</strong> any player at any time, for any reason, without warning or explanation.
-        </p>
+                <a href="https://www.outlandsmc.net/policy.html"
+                   class="hover:text-badlands-orange transition">
+                    Policy
+                </a>
 
-        <h2 class="text-2xl font-bold mt-8 mb-2 text-lime-400">4. Payments and Donations</h2>
-        <p class="text-gray-300">
-            Purchases made through our store (such as ranks, perks, or other in-game benefits) are <strong>final and non-refundable</strong>. Once a payment is processed, it cannot be reversed, even if your account is later banned, muted, or otherwise restricted.
-        </p>
-        <p class="text-gray-300 mt-2">
-            We plan to use <strong>Tebex</strong> as our official payment platform to handle all store transactions securely.
-        </p>
+                <a href="https://www.outlandsmc.net/tos.html"
+                   class="text-badlands-orange">
+                    TOS
+                </a>
+            </nav>
 
-        <h2 class="text-2xl font-bold mt-8 mb-2 text-lime-400">5. Liability</h2>
-        <p class="text-gray-300">
-            BambooCraftMC, its staff, and affiliates are not responsible for any loss of data, account access, or damages resulting from server downtime, data corruption, or player actions.
-        </p>
-
-        <h2 class="text-2xl font-bold mt-8 mb-2 text-lime-400">6. Third-Party Services</h2>
-        <p class="text-gray-300">
-            We may use external services (such as Discord, Tebex, or analytics tools) to enhance your experience. These services may have their own privacy policies or terms, which you should review separately.
-        </p>
-
-        <h2 class="text-2xl font-bold mt-8 mb-2 text-lime-400">7. Changes to Terms</h2>
-        <p class="text-gray-300">
-            We may update these Terms of Service at any time. Continued use of the server after changes are posted means you agree to the updated terms.
-        </p>
-
-        <h2 class="text-2xl font-bold mt-8 mb-2 text-lime-400">8. Governing Law</h2>
-        <p class="text-gray-300">
-            These Terms of Service are governed by the laws of the <strong>United States</strong>. By using BambooCraftMC, you consent to the jurisdiction of U.S. courts for any disputes that may arise.
-        </p>
-
-        <p class="mt-6 text-gray-400">
-            <em>Last updated: March 2026</em>
-        </p>
-
-    </section>
-</main>
-
-<!-- Footer -->
-<footer class="bg-gray-900 text-gray-400 text-sm py-6 border-t border-gray-800">
-    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-center md:justify-between items-center space-y-3 md:space-y-0">
-        <p>BamboocraftMC.</p>
-        <div class="flex space-x-6">
-            <a href="policy.html" class="hover:text-lime-400 transition duration-300">Privacy Policy</a>
-            <a href="rules.html" class="hover:text-lime-400 transition duration-300">Rules</a>
-            <a href="tos.html" class="hover:text-lime-400 transition duration-300">Terms of Service</a>
         </div>
-    </div>
-</footer>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero-background flex items-center justify-center text-center px-4">
+        <div>
+            <h1 class="text-5xl md:text-7xl font-bold text-badlands-orange">
+                Terms of Service
+            </h1>
+
+            <p class="mt-4 text-lg md:text-xl text-gray-300">
+                The terms governing your use of the Outlands Network.
+            </p>
+        </div>
+    </section>
+
+    <!-- CONTENT -->
+    <main class="max-w-5xl mx-auto px-4 py-16 w-full">
+
+        <!-- INTRODUCTION -->
+        <section class="mb-8">
+            <div class="bg-gray-900 p-8 rounded-2xl border border-gray-800 badlands-shadow">
+                <p class="text-gray-400 leading-relaxed">
+                    Welcome to <strong class="text-badlands-sand">Outlands Network</strong>.
+                    By accessing or playing on our Minecraft server
+                    (<a href="https://mc.outlandsmc.net"
+                       class="text-badlands-orange hover:underline">
+                        mc.outlandsmc.net
+                    </a>),
+                    you agree to follow these Terms of Service. Please read them carefully
+                    before continuing.
+                </p>
+            </div>
+        </section>
+
+        <!-- TERMS -->
+        <section class="space-y-5">
+
+            <div class="bg-gray-900 p-6 rounded-2xl border border-gray-800 badlands-shadow">
+                <h2 class="text-xl font-semibold text-badlands-orange">
+                    1. Eligibility
+                </h2>
+
+                <p class="text-gray-400 mt-2 leading-relaxed">
+                    You must be at least <strong class="text-badlands-sand">13 years old</strong>
+                    to play on Outlands Network. If you are under 13, you may only participate
+                    with verified parental or guardian consent. By playing, you confirm that
+                    you meet these requirements.
+                </p>
+            </div>
+
+            <div class="bg-gray-900 p-6 rounded-2xl border border-gray-800 badlands-shadow">
+                <h2 class="text-xl font-semibold text-badlands-orange">
+                    2. Minecraft Account Requirement
+                </h2>
+
+                <p class="text-gray-400 mt-2 leading-relaxed">
+                    You must use a <strong class="text-badlands-sand">
+                    legitimately purchased Minecraft: Java Edition account</strong>
+                    from Mojang/Microsoft. Pirated or "cracked" clients are not permitted.
+                    You are solely responsible for the security of your account.
+                </p>
+            </div>
+
+            <div class="bg-gray-900 p-6 rounded-2xl border border-gray-800 badlands-shadow">
+                <h2 class="text-xl font-semibold text-badlands-orange">
+                    3. Server Conduct
+                </h2>
+
+                <p class="text-gray-400 mt-2 leading-relaxed">
+                    All players must follow the
+                    <a href="https://www.outlandsmc.net/rules.html"
+                       class="text-badlands-orange hover:underline">
+                        Server Rules
+                    </a>.
+                    Staff members and moderators reserve the right to
+                    <strong class="text-badlands-sand">kick, mute, or ban</strong>
+                    any player at any time, for any reason, without warning or explanation.
+                </p>
+            </div>
+
+            <div class="bg-gray-900 p-6 rounded-2xl border border-gray-800 badlands-shadow">
+                <h2 class="text-xl font-semibold text-badlands-orange">
+                    4. Payments and Donations
+                </h2>
+
+                <p class="text-gray-400 mt-2 leading-relaxed">
+                    Purchases made through our store, including ranks, perks, or other
+                    in-game benefits, are
+                    <strong class="text-badlands-sand">final and non-refundable</strong>.
+                    Once a payment is processed, it cannot be reversed, even if your
+                    account is later banned, muted, or otherwise restricted.
+                </p>
+
+                <p class="text-gray-400 mt-3 leading-relaxed">
+                    We plan to use <strong class="text-badlands-sand">Tebex</strong>
+                    as our official payment platform to handle store transactions securely.
+                </p>
+            </div>
+
+            <div class="bg-gray-900 p-6 rounded-2xl border border-gray-800 badlands-shadow">
+                <h2 class="text-xl font-semibold text-badlands-orange">
+                    5. Liability
+                </h2>
+
+                <p class="text-gray-400 mt-2 leading-relaxed">
+                    Outlands Network, its staff, and affiliates are not responsible for any
+                    loss of data, account access, or damages resulting from server downtime,
+                    data corruption, or player actions.
+                </p>
+            </div>
+
+            <div class="bg-gray-900 p-6 rounded-2xl border border-gray-800 badlands-shadow">
+                <h2 class="text-xl font-semibold text-badlands-orange">
+                    6. Third-Party Services
+                </h2>
+
+                <p class="text-gray-400 mt-2 leading-relaxed">
+                    We may use external services such as Discord, Tebex, or analytics tools
+                    to enhance your experience. These services may have their own privacy
+                    policies or terms, which you should review separately.
+                </p>
+            </div>
+
+            <div class="bg-gray-900 p-6 rounded-2xl border border-gray-800 badlands-shadow">
+                <h2 class="text-xl font-semibold text-badlands-orange">
+                    7. Changes to Terms
+                </h2>
+
+                <p class="text-gray-400 mt-2 leading-relaxed">
+                    We may update these Terms of Service at any time. Continued use of the
+                    server after changes are posted means you agree to the updated terms.
+                </p>
+            </div>
+
+            <div class="bg-gray-900 p-6 rounded-2xl border border-gray-800 badlands-shadow">
+                <h2 class="text-xl font-semibold text-badlands-orange">
+                    8. Governing Law
+                </h2>
+
+                <p class="text-gray-400 mt-2 leading-relaxed">
+                    These Terms of Service are governed by the laws of the
+                    <strong class="text-badlands-sand">United States</strong>.
+                    By using Outlands Network, you consent to the jurisdiction of
+                    U.S. courts for any disputes that may arise.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- AGREEMENT -->
+        <section class="mt-16">
+            <div class="bg-gray-900 p-8 rounded-2xl border border-gray-800 badlands-shadow">
+
+                <h2 class="text-3xl font-bold text-badlands-sand">
+                    Agreement
+                </h2>
+
+                <p class="text-gray-400 mt-4 leading-relaxed">
+                    By accessing or participating in Outlands Network, you acknowledge
+                    that you have read, understood, and agreed to these Terms of Service,
+                    as well as the Server Rules and Privacy Policy.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- LAST UPDATED -->
+        <p class="mt-8 text-gray-500 text-sm text-center">
+            <em>Last updated: September 2026</em>
+        </p>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-400 text-sm py-6 mt-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-center md:justify-between items-center space-y-3 md:space-y-0">
+
+            <p class="text-center md:text-left">
+                OutlandsMC.
+            </p>
+
+            <div class="flex flex-wrap justify-center gap-x-6 gap-y-2">
+
+                <a href="https://web.outlandsmc.net/discord"
+                   class="hover:text-badlands-orange transition"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Discord
+                </a>
+
+                <a href="mailto:sbamboomcnetwork@gmail.com"
+                   class="hover:text-badlands-orange transition">
+                    Email
+                </a>
+
+                <a href="https://www.outlandsmc.net/policy.html"
+                   class="hover:text-badlands-orange transition">
+                    Privacy Policy
+                </a>
+
+                <a href="https://www.outlandsmc.net/rules.html"
+                   class="hover:text-badlands-orange transition">
+                    Rules
+                </a>
+
+                <a href="https://www.outlandsmc.net/tos.html"
+                   class="hover:text-badlands-orange transition">
+                    Terms of Service
+                </a>
+
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
