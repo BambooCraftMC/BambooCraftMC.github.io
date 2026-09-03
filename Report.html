@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Outlands Network - Player Report">
+    <meta property="og:description" content="Report a player on the Outlands Network.">
+    <meta property="og:url" content="https://web.outlandsmc.net/report">
+    <meta property="og:image" content="https://www.outlandsmc.net/icon.png">
+    <meta property="og:image:width" content="630">
+    <meta property="og:image:height" content="630">
+
+    <link rel="icon" href="icon.png" type="image/png">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Player Report - Outlands Network</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'badlands-red': '#8B3A2B',
+                        'badlands-orange': '#C46A3A',
+                        'badlands-sand': '#E6C49A',
+                        'badlands-brown': '#6E2C00',
+                        'badlands-clay': '#A0522D'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d0e0d;
+        }
+
+        .hero-background {
+            background-image:
+                linear-gradient(rgba(0,0,0,0.78), rgba(0,0,0,0.78)),
+                url('https://web.outlandsmc.net/BambooBackground.png');
+            background-size: cover;
+            background-position: center;
+            min-height: 32vh;
+            overflow: hidden;
+        }
+
+        .badlands-gradient {
+            background: linear-gradient(135deg, #8B3A2B 0%, #C46A3A 100%);
+        }
+
+        .badlands-shadow {
+            box-shadow:
+                0 10px 15px -3px rgba(196, 106, 58, 0.5),
+                0 4px 6px -2px rgba(196, 106, 58, 0.2);
+        }
+
+        input,
+        select,
+        textarea {
+            background-color: #111211;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #C46A3A;
+            box-shadow: 0 0 0 2px rgba(196, 106, 58, 0.2);
+        }
+
+        select option {
+            background-color: #111211;
+            color: white;
+        }
+    </style>
+</head>
+
+<body class="text-white">
+
+<!-- HEADER -->
+<header class="w-full bg-gray-950 border-b border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center">
+
+        <span class="text-xs md:text-sm text-gray-400">
+            NOT AFFILIATED WITH MOJANG OR MINECRAFT
+        </span>
+
+        <div class="flex-1 text-center">
+            <h1 class="text-xl font-bold text-badlands-orange">
+                Outlands Network
+            </h1>
+        </div>
+
+        <nav class="space-x-6 text-gray-300 hidden md:block">
+            <a href="https://web.outlandsmc.net/"
+               class="hover:text-badlands-orange transition">
+                Home
+            </a>
+
+            <a href="https://web.outlandsmc.net/rules.html"
+               class="hover:text-badlands-orange transition">
+                Rules
+            </a>
+
+            <a href="https://web.outlandsmc.net/policy.html"
+               class="hover:text-badlands-orange transition">
+                Policy
+            </a>
+
+            <a href="https://web.outlandsmc.net/tos.html"
+               class="hover:text-badlands-orange transition">
+                TOS
+            </a>
+        </nav>
+
+    </div>
+</header>
+
+
+<!-- HERO -->
+<section class="hero-background flex items-center justify-center text-center px-4">
+
+    <div>
+        <h1 class="text-5xl md:text-7xl font-bold text-badlands-orange">
+            Player Report
+        </h1>
+
+        <p class="mt-4 text-lg md:text-xl text-gray-300">
+            Help us keep the Outlands community safe.
+        </p>
+
+        <p class="mt-5 text-sm md:text-base text-gray-400">
+            Please provide as much information as possible.
+        </p>
+    </div>
+
+</section>
+
+
+<!-- REPORT FORM -->
+<main class="max-w-4xl mx-auto px-4 py-16">
+
+    <div class="bg-gray-900 rounded-2xl border border-gray-800 p-6 md:p-10 badlands-shadow">
+
+        <!-- TITLE -->
+        <div class="mb-10">
+
+            <div class="flex items-center gap-3 mb-3">
+
+                <span class="badlands-gradient px-4 py-1.5 rounded-full
+                             text-sm font-semibold text-white">
+                    Report
+                </span>
+
+                <h2 class="text-2xl md:text-3xl font-bold text-badlands-sand">
+                    Submit a Player Report
+                </h2>
+
+            </div>
+
+            <p class="text-gray-400">
+                Reports are reviewed by the Outlands Network staff.
+                False or malicious reports may result in disciplinary action.
+            </p>
+
+        </div>
+
+
+        <!-- FORM -->
+        <form action="https://api.outlandsmc.net/Report/" method="POST">
+
+            <!-- USERNAME -->
+            <div class="mb-7">
+
+                <label
+                    for="username"
+                    class="block text-sm font-semibold text-gray-300 mb-2">
+                    In-Game Username
+                </label>
+
+                <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Your Minecraft username..."
+                    required
+                    class="w-full px-4 py-3 rounded-xl border border-gray-800
+                           text-white placeholder-gray-600
+                           transition">
+
+            </div>
+
+
+            <!-- REPORTED PLAYER -->
+            <div class="mb-7">
+
+                <label
+                    for="reported"
+                    class="block text-sm font-semibold text-gray-300 mb-2">
+                    Player You Are Reporting
+                </label>
+
+                <input
+                    type="text"
+                    id="reported"
+                    name="reported"
+                    placeholder="Player's Minecraft username..."
+                    required
+                    class="w-full px-4 py-3 rounded-xl border border-gray-800
+                           text-white placeholder-gray-600
+                           transition">
+
+            </div>
+
+
+            <!-- GAME -->
+            <div class="mb-7">
+
+                <label
+                    for="game"
+                    class="block text-sm font-semibold text-gray-300 mb-2">
+                    What Game?
+                </label>
+
+                <input
+                    type="text"
+                    id="game"
+                    name="game"
+                    placeholder="e.g. SMP, Earth, Anarchy..."
+                    required
+                    class="w-full px-4 py-3 rounded-xl border border-gray-800
+                           text-white placeholder-gray-600
+                           transition">
+
+            </div>
+
+
+            <!-- SERVER -->
+            <div class="mb-7">
+
+                <label
+                    for="server"
+                    class="block text-sm font-semibold text-gray-300 mb-2">
+                    Server
+                </label>
+
+                <select
+                    id="server"
+                    name="server"
+                    required
+                    class="w-full px-4 py-3 rounded-xl border border-gray-800
+                           text-white transition">
+
+                    <option value="" disabled selected>
+                        Select a server
+                    </option>
+
+                    <option value="OutlandsMC">
+                        OutlandsMC
+                    </option>
+
+                    <option value="Idiot Central">
+                        Idiot Central
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- DETAILS -->
+            <div class="mb-8">
+
+                <label
+                    for="details"
+                    class="block text-sm font-semibold text-gray-300 mb-2">
+                    Details
+                </label>
+
+                <textarea
+                    id="details"
+                    name="details"
+                    rows="7"
+                    placeholder="Please describe what happened, when it happened, and any other relevant information..."
+                    required
+                    class="w-full px-4 py-3 rounded-xl border border-gray-800
+                           text-white placeholder-gray-600
+                           transition resize-y"></textarea>
+
+            </div>
+
+
+            <!-- SUBMIT -->
+            <button
+                type="submit"
+                class="w-full badlands-gradient px-6 py-3.5
+                       rounded-xl text-white font-semibold
+                       badlands-shadow hover:scale-[1.02]
+                       hover:opacity-90 transition">
+
+                Submit Report
+
+            </button>
+
+        </form>
+
+    </div>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-gray-400 text-sm py-6 mt-12 border-t border-gray-800">
+
+    <div class="max-w-7xl mx-auto px-4
+                flex flex-col md:flex-row
+                justify-center md:justify-between
+                items-center
+                space-y-3 md:space-y-0">
+
+        <p class="text-center md:text-left">
+            OutlandsMC.
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-x-6 gap-y-2">
+
+            <a
+                href="https://web.outlandsmc.net/discord"
+                class="hover:text-badlands-orange transition duration-300"
+                target="_blank"
+                rel="noopener noreferrer">
+                Discord
+            </a>
+
+            <a
+                href="mailto:sbamboomcnetwork@gmail.com"
+                class="hover:text-badlands-orange transition duration-300">
+                Email
+            </a>
+
+            <a
+                href="https://web.outlandsmc.net/policy.html"
+                class="hover:text-badlands-orange transition duration-300">
+                Privacy Policy
+            </a>
+
+            <a
+                href="https://web.outlandsmc.net/rules.html"
+                class="hover:text-badlands-orange transition duration-300">
+                Rules
+            </a>
+
+            <a
+                href="https://web.outlandsmc.net/tos.html"
+                class="hover:text-badlands-orange transition duration-300">
+                Terms of Service
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
