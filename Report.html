@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Outlands Network - Player Report">
-    <meta property="og:description" content="Report a player on the Outlands Network.">
-    <meta property="og:url" content="https://web.outlandsmc.net/report">
-    <meta property="og:image" content="https://www.outlandsmc.net/icon.png">
+    <meta property="og:title" content="VexLands - Player Report">
+    <meta property="og:description" content="Report a player on VexLands.">
+    <meta property="og:url" content="report">
+    <meta property="og:image" content="icon.png">
     <meta property="og:image:width" content="630">
     <meta property="og:image:height" content="630">
 
@@ -14,7 +14,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Player Report - Outlands Network</title>
+    <title>Player Report - VexLands</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -46,7 +46,7 @@
         .hero-background {
             background-image:
                 linear-gradient(rgba(0,0,0,0.78), rgba(0,0,0,0.78)),
-                url('https://web.outlandsmc.net/BambooBackground.png');
+                url('BambooBackground.png');
             background-size: cover;
             background-position: center;
             min-height: 32vh;
@@ -81,6 +81,8 @@
             background-color: #111211;
             color: white;
         }
+
+    .vexlands-gradient-text { background: linear-gradient(90deg, #ef4444 0%, #f97316 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
     </style>
 </head>
 
@@ -95,28 +97,28 @@
         </span>
 
         <div class="flex-1 text-center">
-            <h1 class="text-xl font-bold text-badlands-orange">
-                Outlands Network
+            <h1 class="text-xl font-bold vexlands-gradient-text">
+                VexLands
             </h1>
         </div>
 
         <nav class="space-x-6 text-gray-300 hidden md:block">
-            <a href="https://web.outlandsmc.net/"
+            <a href="index.html"
                class="hover:text-badlands-orange transition">
                 Home
             </a>
 
-            <a href="https://web.outlandsmc.net/rules.html"
+            <a href="rules.html"
                class="hover:text-badlands-orange transition">
                 Rules
             </a>
 
-            <a href="https://web.outlandsmc.net/policy.html"
+            <a href="policy.html"
                class="hover:text-badlands-orange transition">
                 Policy
             </a>
 
-            <a href="https://web.outlandsmc.net/tos.html"
+            <a href="tos.html"
                class="hover:text-badlands-orange transition">
                 TOS
             </a>
@@ -125,17 +127,16 @@
     </div>
 </header>
 
-
 <!-- HERO -->
 <section class="hero-background flex items-center justify-center text-center px-4">
 
     <div>
-        <h1 class="text-5xl md:text-7xl font-bold text-badlands-orange">
+        <h1 class="text-5xl md:text-7xl font-bold vexlands-gradient-text">
             Player Report
         </h1>
 
         <p class="mt-4 text-lg md:text-xl text-gray-300">
-            Help us keep the Outlands community safe.
+            Help us keep VexLands community safe.
         </p>
 
         <p class="mt-5 text-sm md:text-base text-gray-400">
@@ -144,7 +145,6 @@
     </div>
 
 </section>
-
 
 <!-- REPORT FORM -->
 <main class="max-w-4xl mx-auto px-4 py-16">
@@ -168,17 +168,15 @@
             </div>
 
             <p class="text-gray-400">
-                Reports are reviewed by the Outlands Network staff.
+                Reports are reviewed by VexLands staff.
                 False or malicious reports may result in disciplinary action.
             </p>
 
         </div>
 
-
         <!-- FORM -->
         <form action="https://api.outlandsmc.net/Report/" method="POST">
-        <input type="hidden" name="source" value="outlandsmc.net">
-
+        <input type="hidden" name="source" value="VexLands.net">
 
             <!-- USERNAME -->
             <div class="mb-7">
@@ -201,7 +199,6 @@
 
             </div>
 
-
             <!-- REPORTED PLAYER -->
             <div class="mb-7">
 
@@ -222,7 +219,6 @@
                            transition">
 
             </div>
-
 
             <!-- GAME -->
             <div class="mb-7">
@@ -245,7 +241,6 @@
 
             </div>
 
-
             <!-- SERVER -->
             <div class="mb-7">
 
@@ -266,8 +261,8 @@
                         Select a server
                     </option>
 
-                    <option value="OutlandsMC">
-                        OutlandsMC
+                    <option value="VexLands">
+                        VexLands
                     </option>
 
                     <option value="Idiot Central">
@@ -277,7 +272,6 @@
                 </select>
 
             </div>
-
 
             <!-- DETAILS -->
             <div class="mb-8">
@@ -300,7 +294,6 @@
 
             </div>
 
-
             <!-- SUBMIT -->
             <button
                 type="submit"
@@ -319,7 +312,6 @@
 
 </main>
 
-
 <!-- FOOTER -->
 <footer class="bg-gray-900 text-gray-400 text-sm py-6 mt-12 border-t border-gray-800">
 
@@ -330,13 +322,13 @@
                 space-y-3 md:space-y-0">
 
         <p class="text-center md:text-left">
-            OutlandsMC.
+            VexLands.
         </p>
 
         <div class="flex flex-wrap justify-center gap-x-6 gap-y-2">
 
             <a
-                href="https://web.outlandsmc.net/discord"
+                href="discord"
                 class="hover:text-badlands-orange transition duration-300"
                 target="_blank"
                 rel="noopener noreferrer">
@@ -350,19 +342,19 @@
             </a>
 
             <a
-                href="https://web.outlandsmc.net/policy.html"
+                href="policy.html"
                 class="hover:text-badlands-orange transition duration-300">
                 Privacy Policy
             </a>
 
             <a
-                href="https://web.outlandsmc.net/rules.html"
+                href="rules.html"
                 class="hover:text-badlands-orange transition duration-300">
                 Rules
             </a>
 
             <a
-                href="https://web.outlandsmc.net/tos.html"
+                href="tos.html"
                 class="hover:text-badlands-orange transition duration-300">
                 Terms of Service
             </a>
